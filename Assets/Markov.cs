@@ -35,4 +35,17 @@ public class Markov : MonoBehaviour
     {
         
     }
+
+    public float[] getCola()
+    {
+        return Cola;
+    }
+    public float[] getLemonade() 
+    { 
+        return Lemonade; 
+    }
+    public float[] getOrange()
+    {
+        return Orange;
+    }
 }
