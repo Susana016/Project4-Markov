@@ -129,6 +129,7 @@ GameObject:
   m_Component:
   - component: {fileID: 370233573}
   - component: {fileID: 370233572}
+  - component: {fileID: 370233574}
   m_Layer: 0
   m_Name: Orange 3
   m_TagString: Untagged
@@ -200,12 +201,25 @@ Transform:
   m_GameObject: {fileID: 370233571}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8, y: 0.2, z: 0}
+  m_LocalPosition: {x: 8, y: 0.4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &370233574
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 370233571}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 795f90968180dcb4c9de592738d20bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Markov: {fileID: 694785111}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -353,6 +367,7 @@ GameObject:
   m_Component:
   - component: {fileID: 603366863}
   - component: {fileID: 603366862}
+  - component: {fileID: 603366864}
   m_Layer: 0
   m_Name: Orange 2
   m_TagString: Untagged
@@ -424,12 +439,25 @@ Transform:
   m_GameObject: {fileID: 603366861}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2, y: 0.45, z: 0}
+  m_LocalPosition: {x: 2, y: 0.2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &603366864
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 603366861}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 795f90968180dcb4c9de592738d20bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Markov: {fileID: 694785111}
 --- !u!1 &619394800
 GameObject:
   m_ObjectHideFlags: 0
@@ -544,18 +572,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8f326801a26c1b479340a4146cd1c2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Cola:
-  - 0.25
-  - 0.35
-  - 0.4
-  Lemonade:
-  - 0.45
-  - 0.1
-  - 0.45
-  Orange:
-  - 0.75
+  C1: {fileID: 940266977}
+  C2: {fileID: 1977622360}
+  C3: {fileID: 1399458118}
+  L1: {fileID: 2051887284}
+  L2: {fileID: 1065119514}
+  L3: {fileID: 1000220949}
+  O1: {fileID: 909430687}
+  O2: {fileID: 603366863}
+  O3: {fileID: 370233573}
+  ColaGraph:
   - 0.05
   - 0.2
+  - 0.75
+  LemonadeGraph:
+  - 0.2
+  - 0.7
+  - 0.1
+  OrangeGraph:
+  - 0.75
+  - 0.1
+  - 0.15
 --- !u!212 &694785112
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -636,6 +673,7 @@ GameObject:
   m_Component:
   - component: {fileID: 909430687}
   - component: {fileID: 909430686}
+  - component: {fileID: 909430688}
   m_Layer: 0
   m_Name: Orange 1
   m_TagString: Untagged
@@ -713,6 +751,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &909430688
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 909430685}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 795f90968180dcb4c9de592738d20bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Markov: {fileID: 694785111}
 --- !u!1 &940266975
 GameObject:
   m_ObjectHideFlags: 0
@@ -813,6 +864,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 795f90968180dcb4c9de592738d20bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Markov: {fileID: 694785111}
 --- !u!1 &1000220947
 GameObject:
   m_ObjectHideFlags: 0
@@ -823,6 +875,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1000220949}
   - component: {fileID: 1000220948}
+  - component: {fileID: 1000220950}
   m_Layer: 0
   m_Name: Lemonade 3
   m_TagString: Untagged
@@ -894,12 +947,25 @@ Transform:
   m_GameObject: {fileID: 1000220947}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6, y: 0.05, z: 0}
+  m_LocalPosition: {x: 6, y: 0.2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1000220950
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000220947}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 795f90968180dcb4c9de592738d20bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Markov: {fileID: 694785111}
 --- !u!1 &1065119512
 GameObject:
   m_ObjectHideFlags: 0
@@ -910,6 +976,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1065119514}
   - component: {fileID: 1065119513}
+  - component: {fileID: 1065119515}
   m_Layer: 0
   m_Name: Lemonade 2
   m_TagString: Untagged
@@ -981,12 +1048,25 @@ Transform:
   m_GameObject: {fileID: 1065119512}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.1, z: 0}
+  m_LocalPosition: {x: 0, y: 0.45, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1065119515
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1065119512}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 795f90968180dcb4c9de592738d20bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Markov: {fileID: 694785111}
 --- !u!1 &1399458115
 GameObject:
   m_ObjectHideFlags: 0
@@ -1017,6 +1097,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 795f90968180dcb4c9de592738d20bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Markov: {fileID: 694785111}
 --- !u!212 &1399458117
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1081,7 +1162,7 @@ Transform:
   m_GameObject: {fileID: 1399458115}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4, y: 0.75, z: 0}
+  m_LocalPosition: {x: 4, y: 0.4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1117,6 +1198,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 795f90968180dcb4c9de592738d20bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Markov: {fileID: 694785111}
 --- !u!212 &1977622359
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1181,7 +1263,7 @@ Transform:
   m_GameObject: {fileID: 1977622357}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2, y: 0.45, z: 0}
+  m_LocalPosition: {x: -2, y: 0.35, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1197,6 +1279,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2051887284}
   - component: {fileID: 2051887283}
+  - component: {fileID: 2051887285}
   m_Layer: 0
   m_Name: Lemonade 1
   m_TagString: Untagged
@@ -1274,6 +1357,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2051887285
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2051887282}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 795f90968180dcb4c9de592738d20bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Markov: {fileID: 694785111}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
