@@ -48,7 +48,7 @@ public class Soda : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyUp(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space))
         {
             if (transform.position.x == -8)
             {
@@ -85,6 +85,123 @@ public class Soda : MonoBehaviour
             if (transform.position.x == 8)
             {
                 transform.position = new Vector3(transform.position.x, (Markov.changeGraph()[2, 2]), transform.position.z);
+            }
+        }
+        else if (Input.GetKeyDown(KeyCode.C))
+        {
+            if (transform.position.x == -8)
+            {
+                transform.position = new Vector3(transform.position.x, (Markov.changeGraphCola()[0, 0]), transform.position.z);
+            }
+            if (transform.position.x == -6)
+            {
+                transform.position = new Vector3(transform.position.x, (Markov.changeGraphCola()[0, 1]), transform.position.z);
+            }
+            if (transform.position.x == -4)
+            {
+                transform.position = new Vector3(transform.position.x, (Markov.changeGraphCola()[0, 2]), transform.position.z);
+            }
+            if (transform.position.x == -2)
+            {
+                transform.position = new Vector3(transform.position.x, (Markov.changeGraphCola()[1, 0]), transform.position.z);
+            }
+            if (transform.position.x == 0)
+            {
+                transform.position = new Vector3(transform.position.x, (Markov.changeGraphCola()[1, 1]), transform.position.z);
+            }
+            if (transform.position.x == 2)
+            {
+                transform.position = new Vector3(transform.position.x, (Markov.changeGraphCola()[1, 2]), transform.position.z);
+            }
+            if (transform.position.x == 4)
+            {
+                transform.position = new Vector3(transform.position.x, (Markov.changeGraphCola()[2, 0]), transform.position.z);
+            }
+            if (transform.position.x == 6)
+            {
+                transform.position = new Vector3(transform.position.x, (Markov.changeGraphCola()[2, 1]), transform.position.z);
+            }
+            if (transform.position.x == 8)
+            {
+                transform.position = new Vector3(transform.position.x, (Markov.changeGraphCola()[2, 2]), transform.position.z);
+            }
+        }
+        else if (Input.GetKeyDown(KeyCode.L))
+        {
+            if (transform.position.x == -8)
+            {
+                transform.position = new Vector3(transform.position.x, (Markov.changeGraphLemonade()[0, 0]), transform.position.z);
+            }
+            if (transform.position.x == -6)
+            {
+                transform.position = new Vector3(transform.position.x, (Markov.changeGraphLemonade()[0, 1]), transform.position.z);
+            }
+            if (transform.position.x == -4)
+            {
+                transform.position = new Vector3(transform.position.x, (Markov.changeGraphLemonade()[0, 2]), transform.position.z);
+            }
+            if (transform.position.x == -2)
+            {
+                transform.position = new Vector3(transform.position.x, (Markov.changeGraphLemonade()[1, 0]), transform.position.z);
+            }
+            if (transform.position.x == 0)
+            {
+                transform.position = new Vector3(transform.position.x, (Markov.changeGraphLemonade()[1, 1]), transform.position.z);
+            }
+            if (transform.position.x == 2)
+            {
+                transform.position = new Vector3(transform.position.x, (Markov.changeGraphLemonade()[1, 2]), transform.position.z);
+            }
+            if (transform.position.x == 4)
+            {
+                transform.position = new Vector3(transform.position.x, (Markov.changeGraphLemonade()[2, 0]), transform.position.z);
+            }
+            if (transform.position.x == 6)
+            {
+                transform.position = new Vector3(transform.position.x, (Markov.changeGraphLemonade()[2, 1]), transform.position.z);
+            }
+            if (transform.position.x == 8)
+            {
+                transform.position = new Vector3(transform.position.x, (Markov.changeGraphLemonade()[2, 2]), transform.position.z);
+            }
+        }
+        else if (Input.GetKeyDown(KeyCode.O))
+        {
+            if (transform.position.x == -8)
+            {
+                transform.position = new Vector3(transform.position.x, (Markov.changeGraphOrange()[0, 0]), transform.position.z);
+            }
+            if (transform.position.x == -6)
+            {
+                transform.position = new Vector3(transform.position.x, (Markov.changeGraphOrange()[0, 1]), transform.position.z);
+            }
+            if (transform.position.x == -4)
+            {
+                transform.position = new Vector3(transform.position.x, (Markov.changeGraphOrange()[0, 2]), transform.position.z);
+            }
+            if (transform.position.x == -2)
+            {
+                transform.position = new Vector3(transform.position.x, (Markov.changeGraphOrange()[1, 0]), transform.position.z);
+            }
+            if (transform.position.x == 0)
+            {
+                transform.position = new Vector3(transform.position.x, (Markov.changeGraphOrange()[1, 1]), transform.position.z);
+            }
+            if (transform.position.x == 2)
+            {
+                transform.position = new Vector3(transform.position.x, (Markov.changeGraphOrange()[1, 2]), transform.position.z);
+            }
+            if (transform.position.x == 4)
+            {
+                transform.position = new Vector3(transform.position.x, (Markov.changeGraphOrange()[2, 0]), transform.position.z);
+            }
+            if (transform.position.x == 6)
+            {
+                transform.position = new Vector3(transform.position.x, (Markov.changeGraphOrange()[2, 1]), transform.position.z);
+            }
+            if (transform.position.x == 8)
+            {
+                transform.position = new Vector3(transform.position.x, (Markov.changeGraphOrange()[2, 2]), transform.position.z);
             }
         }
         else

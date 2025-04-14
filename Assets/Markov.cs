@@ -52,7 +52,7 @@ public class Markov : MonoBehaviour
     public float[,] changeGraph()
     {
         float[,] graph = { { ColaGraph[0], ColaGraph[1], ColaGraph[2] }, { LemonadeGraph[0], LemonadeGraph[1], LemonadeGraph[2] }, { OrangeGraph[0], OrangeGraph[1], OrangeGraph[2] } };
-        float[,] newGraph = new float[,] { {C1.position.y, C2.position.y, C3.position.y }, {L1.position.y, L2.position.y, L3.position.y }, {O1.position.y, O2.position.y, O3.position.y } };
+        float[,] newGraph = new float[,] { { C1.position.y, C2.position.y, C3.position.y }, { L1.position.y, L2.position.y, L3.position.y }, { O1.position.y, O2.position.y, O3.position.y } };
         newGraph[0, 0] = newGraph[0, 0] * graph[0, 0] + newGraph[0, 1] * graph[1, 0] + newGraph[0, 2] * graph[2, 0];
         newGraph[0, 1] = newGraph[0, 0] * graph[0, 1] + newGraph[0, 1] * graph[1, 1] + newGraph[0, 2] * graph[2, 1];
         newGraph[0, 2] = newGraph[0, 0] * graph[0, 2] + newGraph[0, 1] * graph[1, 2] + newGraph[0, 2] * graph[2, 2];
@@ -62,6 +62,22 @@ public class Markov : MonoBehaviour
         newGraph[2, 0] = newGraph[2, 0] * graph[0, 0] + newGraph[2, 1] * graph[1, 0] + newGraph[2, 2] * graph[2, 0];
         newGraph[2, 1] = newGraph[2, 0] * graph[0, 1] + newGraph[2, 1] * graph[1, 1] + newGraph[2, 2] * graph[2, 1];
         newGraph[2, 2] = newGraph[2, 0] * graph[0, 2] + newGraph[2, 1] * graph[1, 2] + newGraph[2, 2] * graph[2, 2];
+        return newGraph;
+    }
+
+    public float[,] changeGraphCola()
+    {
+        float[,] newGraph = new float[,] { { C1.position.y + 0.02f, C2.position.y - 0.01f, C3.position.y - 0.01f }, { L1.position.y + 0.02f, L2.position.y - 0.01f, L3.position.y - 0.01f }, { O1.position.y + 0.02f, O2.position.y - 0.01f, O3.position.y - 0.01f } };
+        return newGraph;
+    }
+    public float[,] changeGraphLemonade()
+    {
+        float[,] newGraph = new float[,] { { C1.position.y - 0.01f, C2.position.y + 0.02f, C3.position.y - 0.01f }, { L1.position.y - 0.01f, L2.position.y + 0.02f, L3.position.y - 0.01f }, { O1.position.y - 0.01f, O2.position.y + 0.02f, O3.position.y - 0.01f } };
+        return newGraph;
+    }
+    public float[,] changeGraphOrange()
+    {
+        float[,] newGraph = new float[,] { { C1.position.y - 0.01f, C2.position.y - 0.01f, C3.position.y + 0.02f }, { L1.position.y - 0.01f, L2.position.y - 0.01f, L3.position.y + 0.02f }, { O1.position.y - 0.01f, O2.position.y - 0.01f, O3.position.y + 0.02f } };
         return newGraph;
     }
 }
