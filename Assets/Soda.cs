@@ -4,6 +4,9 @@ using UnityEngine;
 public class Soda : MonoBehaviour
 {
     public Markov Markov;
+    private int colaCount = 0;
+    private int lemonadeCount = 0;
+    private int orangeCount = 0;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -56,6 +59,7 @@ public class Soda : MonoBehaviour
                 if (transform.position.y >= 1)
                 {
                     Debug.Log("The market is cola-dominant.");
+                    Debug.Log("Total presses: " + colaCount);
                     UnityEditor.EditorApplication.isPlaying = false;
                 }
             }
@@ -65,6 +69,7 @@ public class Soda : MonoBehaviour
                 if (transform.position.y >= 1)
                 {
                     Debug.Log("The market is lemonade-dominant.");
+                    Debug.Log("Total presses: " + lemonadeCount);
                     UnityEditor.EditorApplication.isPlaying = false;
                 }
             }
@@ -74,6 +79,7 @@ public class Soda : MonoBehaviour
                 if (transform.position.y >= 1)
                 {
                     Debug.Log("The market is orange-dominant.");
+                    Debug.Log("Total presses: " + orangeCount);
                     UnityEditor.EditorApplication.isPlaying = false;
                 }
             }
@@ -83,6 +89,7 @@ public class Soda : MonoBehaviour
                 if (transform.position.y >= 1)
                 {
                     Debug.Log("The market is cola-dominant.");
+                    Debug.Log("Total presses: " + colaCount);
                     UnityEditor.EditorApplication.isPlaying = false;
                 }
             }
@@ -92,6 +99,7 @@ public class Soda : MonoBehaviour
                 if (transform.position.y >= 1)
                 {
                     Debug.Log("The market is lemonade-dominant.");
+                    Debug.Log("Total presses: " + lemonadeCount);
                     UnityEditor.EditorApplication.isPlaying = false;
                 }
             }
@@ -101,6 +109,7 @@ public class Soda : MonoBehaviour
                 if (transform.position.y >= 1)
                 {
                     Debug.Log("The market is orange-dominant.");
+                    Debug.Log("Total presses: " + orangeCount);
                     UnityEditor.EditorApplication.isPlaying = false;
                 }
             }
@@ -110,6 +119,7 @@ public class Soda : MonoBehaviour
                 if (transform.position.y >= 1)
                 {
                     Debug.Log("The market is cola-dominant.");
+                    Debug.Log("Total presses: " + colaCount);
                     UnityEditor.EditorApplication.isPlaying = false;
                 }
             }
@@ -119,6 +129,7 @@ public class Soda : MonoBehaviour
                 if (transform.position.y >= 1)
                 {
                     Debug.Log("The market is lemonade-dominant.");
+                    Debug.Log("Total presses: " + lemonadeCount);
                     UnityEditor.EditorApplication.isPlaying = false;
                 }
             }
@@ -128,18 +139,21 @@ public class Soda : MonoBehaviour
                 if (transform.position.y >= 1)
                 {
                     Debug.Log("The market is orange-dominant.");
+                    Debug.Log("Total presses: " + orangeCount);
                     UnityEditor.EditorApplication.isPlaying = false;
                 }
             }
         }
         else if (Input.GetKeyDown(KeyCode.C))
         {
+            colaCount++;
             if (transform.position.x == -8)
             {
                 transform.position = new Vector3(transform.position.x, (Markov.changeGraphCola()[0, 0]), transform.position.z);
                 if (transform.position.y >= 1)
                 {
                     Debug.Log("The market is cola-dominant.");
+                    Debug.Log("Total presses: " +  colaCount);
                     UnityEditor.EditorApplication.isPlaying = false;
                 }
             }
@@ -149,6 +163,7 @@ public class Soda : MonoBehaviour
                 if (transform.position.y >= 1)
                 {
                     Debug.Log("The market is lemonade-dominant.");
+                    Debug.Log("Total presses: " + lemonadeCount);
                     UnityEditor.EditorApplication.isPlaying = false;
                 }
             }
@@ -158,6 +173,7 @@ public class Soda : MonoBehaviour
                 if (transform.position.y >= 1)
                 {
                     Debug.Log("The market is orange-dominant.");
+                    Debug.Log("Total presses: " + orangeCount);
                     UnityEditor.EditorApplication.isPlaying = false;
                 }
             }
@@ -167,6 +183,7 @@ public class Soda : MonoBehaviour
                 if (transform.position.y >= 1)
                 {
                     Debug.Log("The market is cola-dominant.");
+                    Debug.Log("Total presses: " + colaCount);
                     UnityEditor.EditorApplication.isPlaying = false;
                 }
             }
@@ -176,6 +193,7 @@ public class Soda : MonoBehaviour
                 if (transform.position.y >= 1)
                 {
                     Debug.Log("The market is lemonade-dominant.");
+                    Debug.Log("Total presses: " + lemonadeCount);
                     UnityEditor.EditorApplication.isPlaying = false;
                 }
             }
@@ -185,6 +203,7 @@ public class Soda : MonoBehaviour
                 if (transform.position.y >= 1)
                 {
                     Debug.Log("The market is orange-dominant.");
+                    Debug.Log("Total presses: " + orangeCount);
                     UnityEditor.EditorApplication.isPlaying = false;
                 }
             }
@@ -194,6 +213,7 @@ public class Soda : MonoBehaviour
                 if (transform.position.y >= 1)
                 {
                     Debug.Log("The market is cola-dominant.");
+                    Debug.Log("Total presses: " + colaCount);
                     UnityEditor.EditorApplication.isPlaying = false;
                 }
             }
@@ -203,6 +223,7 @@ public class Soda : MonoBehaviour
                 if (transform.position.y >= 1)
                 {
                     Debug.Log("The market is lemonade-dominant.");
+                    Debug.Log("Total presses: " + lemonadeCount);
                     UnityEditor.EditorApplication.isPlaying = false;
                 }
             }
@@ -212,18 +233,21 @@ public class Soda : MonoBehaviour
                 if (transform.position.y >= 1)
                 {
                     Debug.Log("The market is orange-dominant.");
+                    Debug.Log("Total presses: " + orangeCount);
                     UnityEditor.EditorApplication.isPlaying = false;
                 }
             }
         }
         else if (Input.GetKeyDown(KeyCode.L))
         {
+            lemonadeCount++;
             if (transform.position.x == -8)
             {
                 transform.position = new Vector3(transform.position.x, (Markov.changeGraphLemonade()[0, 0]), transform.position.z);
                 if (transform.position.y >= 1)
                 {
                     Debug.Log("The market is cola-dominant.");
+                    Debug.Log("Total presses: " + colaCount);
                     UnityEditor.EditorApplication.isPlaying = false;
                 }
             }
@@ -233,6 +257,7 @@ public class Soda : MonoBehaviour
                 if (transform.position.y >= 1)
                 {
                     Debug.Log("The market is lemonade-dominant.");
+                    Debug.Log("Total presses: " + lemonadeCount);
                     UnityEditor.EditorApplication.isPlaying = false;
                 }
             }
@@ -242,6 +267,7 @@ public class Soda : MonoBehaviour
                 if (transform.position.y >= 1)
                 {
                     Debug.Log("The market is orange-dominant.");
+                    Debug.Log("Total presses: " + orangeCount);
                     UnityEditor.EditorApplication.isPlaying = false;
                 }
             }
@@ -251,6 +277,7 @@ public class Soda : MonoBehaviour
                 if (transform.position.y >= 1)
                 {
                     Debug.Log("The market is cola-dominant.");
+                    Debug.Log("Total presses: " + colaCount);
                     UnityEditor.EditorApplication.isPlaying = false;
                 }
             }
@@ -260,6 +287,7 @@ public class Soda : MonoBehaviour
                 if (transform.position.y >= 1)
                 {
                     Debug.Log("The market is lemonade-dominant.");
+                    Debug.Log("Total presses: " + lemonadeCount);
                     UnityEditor.EditorApplication.isPlaying = false;
                 }
             }
@@ -269,6 +297,7 @@ public class Soda : MonoBehaviour
                 if (transform.position.y >= 1)
                 {
                     Debug.Log("The market is orange-dominant.");
+                    Debug.Log("Total presses: " + orangeCount);
                     UnityEditor.EditorApplication.isPlaying = false;
                 }
             }
@@ -278,6 +307,7 @@ public class Soda : MonoBehaviour
                 if (transform.position.y >= 1)
                 {
                     Debug.Log("The market is cola-dominant.");
+                    Debug.Log("Total presses: " + colaCount);
                     UnityEditor.EditorApplication.isPlaying = false;
                 }
             }
@@ -287,6 +317,7 @@ public class Soda : MonoBehaviour
                 if (transform.position.y >= 1)
                 {
                     Debug.Log("The market is lemonade-dominant.");
+                    Debug.Log("Total presses: " + lemonadeCount);
                     UnityEditor.EditorApplication.isPlaying = false;
                 }
             }
@@ -296,18 +327,21 @@ public class Soda : MonoBehaviour
                 if (transform.position.y >= 1)
                 {
                     Debug.Log("The market is orange-dominant.");
+                    Debug.Log("Total presses: " + orangeCount);
                     UnityEditor.EditorApplication.isPlaying = false;
                 }
             }
         }
         else if (Input.GetKeyDown(KeyCode.O))
         {
+            orangeCount++;
             if (transform.position.x == -8)
             {
                 transform.position = new Vector3(transform.position.x, (Markov.changeGraphOrange()[0, 0]), transform.position.z);
                 if (transform.position.y >= 1)
                 {
                     Debug.Log("The market is cola-dominant.");
+                    Debug.Log("Total presses: " + colaCount);
                     UnityEditor.EditorApplication.isPlaying = false;
                 }
             }
@@ -317,6 +351,7 @@ public class Soda : MonoBehaviour
                 if (transform.position.y >= 1)
                 {
                     Debug.Log("The market is lemonade-dominant.");
+                    Debug.Log("Total presses: " + lemonadeCount);
                     UnityEditor.EditorApplication.isPlaying = false;
                 }
             }
@@ -326,6 +361,7 @@ public class Soda : MonoBehaviour
                 if (transform.position.y >= 1)
                 {
                     Debug.Log("The market is orange-dominant.");
+                    Debug.Log("Total presses: " + orangeCount);
                     UnityEditor.EditorApplication.isPlaying = false;
                 }
             }
@@ -335,6 +371,7 @@ public class Soda : MonoBehaviour
                 if (transform.position.y >= 1)
                 {
                     Debug.Log("The market is cola-dominant.");
+                    Debug.Log("Total presses: " + colaCount);
                     UnityEditor.EditorApplication.isPlaying = false;
                 }
             }
@@ -344,6 +381,7 @@ public class Soda : MonoBehaviour
                 if (transform.position.y >= 1)
                 {
                     Debug.Log("The market is lemonade-dominant.");
+                    Debug.Log("Total presses: " + lemonadeCount);
                     UnityEditor.EditorApplication.isPlaying = false;
                 }
             }
@@ -353,6 +391,7 @@ public class Soda : MonoBehaviour
                 if (transform.position.y >= 1)
                 {
                     Debug.Log("The market is orange-dominant.");
+                    Debug.Log("Total presses: " + orangeCount);
                     UnityEditor.EditorApplication.isPlaying = false;
                 }
             }
@@ -362,6 +401,7 @@ public class Soda : MonoBehaviour
                 if (transform.position.y >= 1)
                 {
                     Debug.Log("The market is cola-dominant.");
+                    Debug.Log("Total presses: " + colaCount);
                     UnityEditor.EditorApplication.isPlaying = false;
                 }
             }
@@ -371,6 +411,7 @@ public class Soda : MonoBehaviour
                 if (transform.position.y >= 1)
                 {
                     Debug.Log("The market is lemonade-dominant.");
+                    Debug.Log("Total presses: " + lemonadeCount);
                     UnityEditor.EditorApplication.isPlaying = false;
                 }
             }
@@ -380,6 +421,7 @@ public class Soda : MonoBehaviour
                 if (transform.position.y >= 1)
                 {
                     Debug.Log("The market is orange-dominant.");
+                    Debug.Log("Total presses: " + orangeCount);
                     UnityEditor.EditorApplication.isPlaying = false;
                 }
             }
